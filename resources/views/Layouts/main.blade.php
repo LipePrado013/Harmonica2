@@ -23,6 +23,10 @@
 
     </header>
 
+    <main>
+        @yield('conteudo')
+    </main>
+
 </body>
 
 </html>

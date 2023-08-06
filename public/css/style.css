@@ -7,12 +7,71 @@
 .cabecalho {
     background: #dbdbdb9f;
     z-index: 5;
-    box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 30px #000;
 }
 
+/* linha vermelha */
+.info-top {
+    /* border: 1px solid #f00; */
+    height: 2rem;
+    background: #F00;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    justify-content: space-around;
+}
+
+.info-top div {
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.insta,
+.facebook,
+.youtube {
+    font-size: 1.7rem;
+    background: transparent;
+    border: 0;
+    /* border-radius: 100%; */
+
+    cursor: pointer;
+}
+
+.insta {
+    background-image: linear-gradient(#515BD4, #8134AF, #DD2A7B, #FEDA77, #F58529);
+    -webkit-background-clip: text;
+    filter: drop-shadow(0 0 5px #FFF);
+    -webkit-text-fill-color: transparent;
+}
+
+.facebook {
+    color: #006dfc;
+    filter: drop-shadow(0 0 5px #FFF);
+
+}
+
+.youtube {
+    /* background: #FFF; */
+    color: #F00;
+    filter: drop-shadow(0 0 5px #FFF);
+    font-size: 2rem;
+
+}
+
+
+@media (max-width: 990px) {
+    .info-top {
+        display: none;
+    }
+}
+
+/* linha vermelha  fim*/
+
 .nav {
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
+    /* backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px); */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,6 +79,7 @@
     /* border: 1px solid red;    */
     padding-left: 10px;
     padding-right: 10px;
+
 
 }
 
@@ -74,7 +134,7 @@
     color: blue;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1020px) {
 
     #openMenuLateral {
         background: transparent;
@@ -204,3 +264,369 @@
 }
 
 /* ============================ */
+/* ============== cont1 ============== */
+
+
+
+.back-slide img {
+    /* object-fit: cover; */
+    width: 100%;
+    height: 35rem;
+}
+
+.titulo-cont1 {
+    /* border: 1px solid red; */
+    /* backdrop-filter: blur(2px); */
+    filter: drop-shadow(0 0 3px #000);
+    border-radius: 20px;
+    width: 40rem;
+    padding: 10px;
+    position: absolute;
+    top: 18rem;
+    color: #FFF;
+    left: 10%;
+    max-width: 80%;
+    /* background: #0000007a; */
+    transition: .5s;
+}
+
+.titulo-cont1 h1 {
+    font-size: 3rem;
+}
+
+.titulo-cont1 p {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.titulo-cont1 button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #FFF;
+    background: #F00;
+}
+
+
+
+
+/* ============== cont1 - fim ============== */
+/* ============== box-cards ============== */
+
+
+.box-cards {
+    /* border: 1px solid #f00; */
+    display: flex;
+    justify-content: space-evenly;
+    /* padding: 20px; */
+    background: #c9c9c9;
+    flex-wrap: wrap;
+    margin-top: -130px;
+}
+
+.Mycards {
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 0 10px #000;
+    padding: 10px;
+    font-weight: 600;
+    background: #FFF;
+}
+
+.Mycards i {
+    background: #F00;
+    color: #FFF;
+    padding: 20px;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+
+
+/* ============== box-cards - fim ============== */
+/* ============== cont2 ============== */
+
+.cont2 {
+    background: #c9c9c9;
+    /* height: 1000px; */
+    /* border: 1px solid #f00; */
+    padding: 4rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+}
+
+.box-img-cont2 {
+    border: 1px solid #f00;
+    max-width: 80%;
+    width: 45rem;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 7px solid #FFF;
+    height: 100%;
+    box-shadow: 0 0 10px #000;
+}
+
+.box-text-cont2 {
+    height: 100%;
+    width: 40rem;
+    /* margin: 1.5rem; */
+    max-width: 90%;
+    /* border: 1px solid #f00; */
+}
+
+.box-text-cont2 h1 {
+    font-size: 2.3rem;
+    margin: 1.5rem 0;
+
+}
+
+.box-text-cont2 p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.box-btn-img-cont2 {
+    /* border: 1px solid #f00; */
+    display: flex;
+    padding: 1rem;
+    max-width: 90%;
+    justify-content: space-between;
+}
+
+.box-btn-img-cont2 img {
+    width: 50%;
+    filter: drop-shadow(0 0 10px #000);
+    /* border: 2px solid rgb(255, 102, 0); */
+}
+
+.box-btn-img-cont2 button {
+    width: 180px;
+    border: 1px solid #f00;
+    padding: .7rem 1.1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 0;
+    margin-top: 2rem;
+    border-radius: 10px;
+    background: #F00;
+    color: #FFF;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.box-btn-img-cont2 button:hover {}
+
+.balao {
+    background: #c9c9c9;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: -25px;
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid #f00; */
+}
+
+/* ============== cont2 - fim ============== */
+/* ============== cont3 ============== */
+.cont3 {
+    /* height: 500px; */
+    padding-top: 2.1rem;
+    /* border: 1px solid #f00; */
+}
+
+.titulo-cont3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid #f00; */
+    margin-bottom: 1rem;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.titulo-cont3 h5 {
+    padding: .7rem;
+    background: #c9c9c9;
+
+}
+
+.titulo-cont3 h1 {
+    font-size: 1.8rem;
+
+    /* background: #c9c9c9; */
+}
+
+.box-card-cont3 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.Mycards-cont3 {
+    margin: 20px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    /* box-shadow: 0 0 10px #000; */
+    padding: 10px;
+    font-weight: 600;
+    background: #FFF;
+}
+
+.Mycards-cont3 p {
+    font-size: 1.5rem;
+}
+
+.Mycards-cont3 i {
+    background: #F00;
+    color: #FFF;
+    padding: 20px;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 15px 15px 0 #c9c9c9;
+}
+
+
+
+/* ============== cont3 - fim ============== */
+/* ============== box-info ============== */
+
+.box-info {
+    /* border: 1px solid #f00; */
+    background-image: linear-gradient(100deg, #2c06e8, #f00);
+    /* height: 30rem; */
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    color: #FFF;
+    flex-wrap: wrap;
+}
+
+.card-info {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    /* border: 1px solid #FFF; */
+    width: 20rem;
+    height: 15rem;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.card-info i {
+    font-size: 4rem;
+
+}
+
+/* ============== box-info - fim ============== */
+/* ============== cont4 ============== */
+
+.cont4 {
+    /* border: 1px solid red; */
+    display: flex;
+    padding: 3rem;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.box-video {
+    width: 40rem;
+    height: 30rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* border: 1px solid red; */
+
+}
+
+.box-video iframe {
+    width: 100%;
+    height: 80%;
+    border: 5px solid #F0f0f0;
+    box-shadow: 0 0 7px #000;
+    border-radius: 10px;
+    /* border: 1px solid red; */
+}
+
+.box-img-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 52rem;
+    height: 35rem;
+}
+
+.box-img-txt h1 {
+    font-size: 2.3rem;
+}
+
+.img-box-cont4 {
+    display: flex;
+    height: 100%;
+    justify-content: end;
+    /* border: 1px  solid red; */
+    align-items: end;
+}
+
+.box-img-txt img {
+    max-width: 100%;
+    width: 80%;
+    height: 20rem;
+    filter: drop-shadow(0 0 10px #000);
+}
+
+/* ============== cont4 - fim ============== */
+/* ============== cont5 ============== */
+
+.cont5 {
+    height: 50rem;
+    border: 1px solid red;
+    background: url('../img/porto.jpeg') no-repeat;
+    background-size: cover;
+}
+
+.fundo-cont5 {
+    width: 100%;
+    height: 100%;
+    background: #0000008c;
+}
+
+/* ============== cont5 - fim ============== */
+/* ============== responsividade  ============== */
+
+
+@media (max-width: 700px) {
+    .titulo-cont1 {
+        /* border: 1px solid red; */
+        top: 12rem;
+    }
+
+    .box-cards {
+        margin-top: -100px;
+    }
+}
+
+/* ============== responsividade fim ============== */
